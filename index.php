@@ -18,7 +18,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	define('ENVIRONMENT', 'development');
+	define('ENVIRONMENT', 'testing');
 /*
  *---------------------------------------------------------------
  * ERROR REPORTING
@@ -45,6 +45,12 @@ if (defined('ENVIRONMENT'))
 			exit('The application environment is not set correctly.');
 	}
 }
+
+/*-------------------------------
+ * Composer autoload
+ * -----------------------------
+ */
+include_once './vendor/autoload.php';
 
 /*
  *---------------------------------------------------------------
